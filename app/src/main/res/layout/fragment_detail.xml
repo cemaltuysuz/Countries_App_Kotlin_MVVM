@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipe_layout"
+        tools:context=".view.DetailFragment">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:padding="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewPub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:scaleType="centerCrop"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@mipmap/ic_launcher"
+                        android:id="@+id/countryFlagImagePub"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/countryNamePub"
+            style="@style/TextViewStyle"
+            android:hint="@string/country_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/countryRegionPub"
+            android:hint="@string/country_region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextViewStyle"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/countryCurrencyPub"
+            android:hint="@string/country_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextViewStyle"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextViewStyle"
+            android:id="@+id/countryLanguagePub"
+            android:hint="@string/country_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
