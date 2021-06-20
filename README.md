@@ -9,7 +9,7 @@
 - MVVM
 - Room
 - Navigation
-- Retrofit2
+- Retrofit
 - RxJava
 - Lifecycle aware components
 - Glide
