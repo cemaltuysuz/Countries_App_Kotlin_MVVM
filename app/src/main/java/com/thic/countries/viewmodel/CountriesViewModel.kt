@@ -26,9 +26,6 @@ class CountriesViewModel(application: Application) : BaseViewModel(application) 
 
     fun refreshData(){
         val updateTime = customPref.getTime()
-        Log.d("GET update time :","$updateTime")
-        Log.d("GET current :","${System.nanoTime()}")
-        Log.d("GET refresh time :","$refreshTime")
         if (updateTime != null && updateTime != 0L && System.nanoTime() - updateTime < refreshTime ){
             getDataFromSQLite()
         }else{
