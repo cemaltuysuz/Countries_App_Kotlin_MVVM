@@ -11,6 +11,6 @@
 - Navigation
 - Retrofit
 - RxJava
-- Lifecycle aware components
+- Some Lifecycle aware components
 - Glide
 
